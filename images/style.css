@@ -1,0 +1,66 @@
+
+body{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(../images/SKZGROUP.jpg);
+  background-size: cover;
+}
+  
+#carrousel{
+  width: 420px;
+  height: 600px;
+  border: solid 4px white;
+  box-shadow: 0 0 14px rgba(0,0,0,O.3);
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.418);
+  overflow: hidden;
+}
+
+#container{
+  width: 420px;
+  height: 600px;
+}
+
+.bouton{
+  position: absolute;
+  width: 20px;
+  cursor: pointer;
+  top: 300px;
+}
+
+#g { 
+  left: 0;
+  opacity:0.4;
+  transition: all 0.3s ease;
+}
+
+#d {
+  right: 0;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+#g:hover{
+  transform: scale(1.1);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+#d:hover{
+  transform: scale(1.1);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.photo{
+  width: 420px;
+  height: 600px;
+  margin: 0;
+  display: inline-block;
+  background-size: cover;
+ 
+}
+

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+     <!-- Entete -->
+
+     <div class="header1">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="">
+        </div>
+        <!-- <div class="menuburger">
+            <img src="" alt="">
+        </div> -->
+    </div>
+
+<hr size="10" color="#6F232C">
+
+    <!-- Navbar -->
+
+    <!-- <div class="navbar">
+        <ul>
+            <div><li class="Discography">Discography</li></div>
+            <div><li class="Videos">Vidéos</li></div>
+            <div><li class="Lyrics">Lyrics</li></div>
+            <div><li class="Pictures">Pictures</li></div>
+            <div><li class="Photobook">Photobook</li></div>
+        </ul>
+    </div>  -->
+
+   <!-- Image entete -->
+
+   <div class="imageprincipale">
+   </div>
+
+   <hr size="10" color="#6F232C">
+
+
+   <!-- Biographie -->
+
+   <div class="divBio">
+    <h1 class="Biography">Biography</h1>
+    <div class="bioGeneral">
+        <Div class="bioSkz"> <h2>Biographie de Stray Kids</h2>
+            <h4>Les Stray Kids, un groupe de K-pop audacieux et novateur, ont rapidement conquis le cœur des fans du monde entier avec leur énergie captivante et leur musique puissante. Formé par JYP Entertainment, le groupe a émergé en tant que l'une des forces motrices de l'industrie musicale coréenne, élevant la barre avec leurs performances percutantes et leur créativité débordante.</h4></Div>
+      
+        
+        <div class="bioGenese"><h2>Genèse</h2>
+            <h4>Stray Kids a fait ses débuts en 2018 avec neuf membres talentueux : Bang Chan, Lee Know, Changbin, Hyunjin, Han, Felix, Seungmin, I.N, et Woojin (qui a quitté le groupe en 2019). Leur nom reflète leur désir de défier les normes préétablies et de guider les jeunes égarés vers leur propre chemin.</h4></div>
+        
+        <div class="parcours"><h2>Parcours musical</h2>
+            <h4>Leur discographie diversifiée explore une variété de genres, fusionnant habilement le hip-hop, la pop et l'électronique. De "Hellevator" à "God's Menu", en passant par "Back Door", Stray Kids a constamment délivré des titres dynamiques et accrocheurs, évoquant des messages puissants sur l'individualité, l'autonomie et la résilience.</h4></div>
+        
+        <div class="realisation"><h2>Réalisations notables</h2>
+            <h4>Les Stray Kids ont accumulé de nombreux succès, remportant des prix tels que le "Rookie of the Year" aux Mnet Asian Music Awards et le "World Rookie Award" aux Gaon Chart Music Awards. Leur présence sur la scène internationale s'est renforcée au fil des ans, captivant des millions de fans grâce à des tournées mondiales époustouflantes.</h4></div>
+        
+        <div class="engagement"><h2>Engagement communautaire</h2>
+            <h4>Au-delà de leur musique, Stray Kids s'engagent activement dans des causes sociales importantes. Ils encouragent leurs fans, appelés STAY, à s'exprimer et à être fiers de qui ils sont, créant ainsi une communauté positive et solidaire.</h4></div>
+        
+        <div class="avenir"><h2>L'avenir de Stray Kids</h2>
+            <h4>Alors que Stray Kids continue de tracer son propre chemin dans l'industrie musicale, le groupe demeure une source d'inspiration pour la jeunesse mondiale. Leur passion inébranlable, leur créativité débordante et leur connexion sincère avec les fans font des Stray Kids une force incontournable dans le monde de la K-pop.</h4></div>
+        
+        </div>
+   </div>
+
+   <!-- Presentation des membres -->
+
+   <div class="principal">
+        <div class="Membres">
+            <div class="Bangchan">
+                <img src="images/BANGCHAN.jpg" alt="">
+                <span>Bangchan</span>
+            </div>
+              <div class="Leeknow">
+                  <img src="images/LEEKNOW.jpg" alt="">
+                  <span>Leeknow</span>
+              </div>
+              <div class="Changbin">
+                <img src="images/CHANGBIN.jpg" alt="">
+                <span>Changbin</span>
+              </div>
+              <div class="Hyunjin">
+                <img src="images/HYUNJIN.jpg" alt="">
+                <span>Hyunjin</span>
+              </div>
+              <div class="Han">
+                 <img src="images/HAN.jpg" alt="">
+                 <span>Han</span>
+              </div>
+              <div class="Felix">
+                 <img src="images/FELIX.jpg" alt="">
+                 <span>Felix</span>
+              </div>
+              <div class="Seugmin">
+                 <img src="images/SEUGMIN.jpg" alt="">
+                 <span>Seungmin</span>
+              </div>
+              <div class="IN">
+                  <img src="images/IN.jpg" alt="">
+                  <span>I.N</span>
+              </div>
+        </div>
+
+
+          <!-- Modale -->
+
+    <main>
+
+        <div class="popup_container">
+            <section class="popup">
+
+                <!-- carte descriptif -->
+
+                <div class="description">
+
+                           <!-- Description haut -->
+
+                    <div class="descriptionhaut">
+                    
+                                <!-- Cote gauche photo + infos -->
+
+                        <div class="deshautcotegauche">
+                            
+                            <div class="imgidentite" onclick="chargerInformationsMembre()">
+                                <img src="images/ID/FelixID.jpg" alt="Felix">
+                            </div>
+                            
+                        </div>
+                    
+                                <!-- Cote droit reste des infos -->
+
+                            <div class="deshautcotedroit">
+
+                                <div class="popup_closeMobile" onclick="closePopup()"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.99486 7.00636C6.60433 7.39689 6.60433 8.03005 6.99486 8.42058L10.58 12.0057L6.99486 15.5909C6.60433 15.9814 6.60433 16.6146 6.99486 17.0051C7.38538 17.3956 8.01855 17.3956 8.40907 17.0051L11.9942 13.4199L15.5794 17.0051C15.9699 17.3956 16.6031 17.3956 16.9936 17.0051C17.3841 16.6146 17.3841 15.9814 16.9936 15.5909L13.4084 12.0057L16.9936 8.42059C17.3841 8.03007 17.3841 7.3969 16.9936 7.00638C16.603 6.61585 15.9699 6.61585 15.5794 7.00638L11.9942 10.5915L8.40907 7.00636C8.01855 6.61584 7.38538 6.61584 6.99486 7.00636Z" fill="#0F0F0F"/>
+                                </svg></div>
+                            
+                                <p id="stagename"></p>
+                                <p id="birthname"></p>
+                                <p id="koreanname"></p>
+                                <p id="birthday"></p>
+                            </div>
+                    </div>
+                    
+
+                        <!-- Description bas -->
+
+                                <div class="descriptionbas">
+                                    <p id="zodiacsign"></p>
+                                    <p id="height"></p>
+                                    <p id="bloodtype"></p>
+                                    <p id="mbtitype"></p>
+                                    <p id="representativeanimal"></p>
+                                    <p id="unit"></p>
+                                    <p id="position"></p>
+                                    <p id="instagram"></p>
+                                    
+                                    <div class="boutonCarrouselMobile" onclick="updateCarrousel()">See Pictures</div>
+
+                                
+                                </div>
+
+                </div>    
+
+                                    <!-- Carrousel -->
+
+                    <div class="image_container">
+                    
+                        <div id="carrousel">
+                            <div id="container">
+                            </div>
+                            <img src="images/boutonDroit2.png" class="bouton" id="d" alt="">
+                            <img src="images/boutonGauche2.png" class="bouton" id="g" alt="">
+                        </div>
+                            <div class="popup_close" onclick="closePopup()"><svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.99486 7.00636C6.60433 7.39689 6.60433 8.03005 6.99486 8.42058L10.58 12.0057L6.99486 15.5909C6.60433 15.9814 6.60433 16.6146 6.99486 17.0051C7.38538 17.3956 8.01855 17.3956 8.40907 17.0051L11.9942 13.4199L15.5794 17.0051C15.9699 17.3956 16.6031 17.3956 16.9936 17.0051C17.3841 16.6146 17.3841 15.9814 16.9936 15.5909L13.4084 12.0057L16.9936 8.42059C17.3841 8.03007 17.3841 7.3969 16.9936 7.00638C16.603 6.61585 15.9699 6.61585 15.5794 7.00638L11.9942 10.5915L8.40907 7.00636C8.01855 6.61584 7.38538 6.61584 6.99486 7.00636Z" fill="#0F0F0F"/>
+                            </svg></div>
+                    </div>
+
+            </section>
+        </div>
+    </main>
+   </div>
+
+<footer>
+    <div class="socialmedia">
+        <div><a href="https://www.instagram.com/realstraykids/"><img src="images/instagram.png" alt=""></a></div>
+        <div><a href="https://twitter.com/Stray_Kids"><img src="images/X.png" alt=""></a></div>
+        <div><a href="https://www.facebook.com/JYPEStrayKids?_rdc=1&_rdr"><img src="images/facebook.png" alt=""></a></div>
+        <div><a href="https://www.youtube.com/c/StrayKids"><img src="images/youtube.png" alt=""></a></div>
+        <div><a href="https://www.tiktok.com/@jypestraykids"><img src="images/TIKTOK.jpg" alt=""></a></div>
+    </div>
+</footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

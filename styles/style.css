@@ -1,0 +1,621 @@
+
+                                /* Entete */
+
+.header1{
+    background-color: black;
+  height: 20vh;
+  width: 100%;
+display: flex;
+}
+
+.logo{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   
+}
+
+hr{
+    width: 100%;
+    
+}
+
+
+                                /* Navbar */
+
+.navbar{
+    width: 100%;
+    height: auto;
+}
+
+ul{
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    color: white;
+    font-size: x-large;
+    
+}
+
+ul div{
+    width: 20VW;
+    height: 10VH;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: white solid;
+    border-width: 1px;
+}
+
+                                /* image entete */
+
+.imageprincipale{
+    background-image: url(../images/imageentete2.jpg);
+    width: 100%;
+    height: 90vh;
+   background-position: center;
+   background-size: cover;
+
+}
+
+                                /* Biographie */
+
+.Biography{
+    padding: 0;
+    margin: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bioGeneral{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/logoskz.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.bioSkz,
+.bioGenese,
+.parcours,
+.realisation,
+.engagement,
+.avenir {
+margin-left: 5VW;
+margin-right: 5vw;
+border-bottom: solid black;
+}
+.avenir{
+    margin-bottom: 5vh;
+}
+
+
+h2 {
+    color: #6F232C;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 8vh;
+}
+
+h3{
+    
+    margin: 0;
+    padding: 0;
+}
+                                /* photo centre */
+.principal {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+                            /* Quadrillage membre */
+
+.Membres {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    margin-top: 50PX;
+    padding: 0;
+}
+
+.Membres div {
+    width: 25%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 6px solid black; 
+    position: relative;
+}
+
+.Membres span {
+    position: absolute;
+    bottom: 0;
+    left: O;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5;
+}
+
+.Bangchan,
+.Leeknow,
+.Changbin,
+.Hyunjin,
+.Han,
+.Felix,
+.Seugmin,
+.IN {
+    width: 25%;
+    height: 25%;
+    background-position: center;
+    background-size: cover;
+}
+
+.Bangchan img,
+.Leeknow img,
+.Changbin img,
+.Hyunjin img,
+.Han img,
+.Felix img,
+.Seugmin img,
+.IN img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+                                    /* Modal */
+
+.main {
+height: 80%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.popup_container {
+position: absolute;
+top: 50;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: rgba(0, 0, 0, 0);
+display: none;
+justify-content: center;
+align-items: center;
+}
+
+.popup_container.active {
+display: flex;
+
+}
+
+.popup {
+height: 600px;
+width: 900px;
+background-color: white;
+border-radius: 10px;
+padding: 5px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+animation: animationA 1s ease-in-out .5s backwards;
+
+
+}
+
+.image_container {
+position: relative;
+height: 600px;
+width: 420px;
+}
+
+.stage-name{
+    text-decoration: underline;
+}
+.description {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+@keyframes animationA {
+0% {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+
+                            /* carrousel */
+
+#container{
+width: 420px;
+height: 600px;
+}
+
+#carrousel{
+width: 410px;
+height: 590px;
+border: solid 4px white;
+position: relative;
+margin-left: 20PX;
+/* background-color: rgba(0, 0, 0, 0.418); */
+overflow: hidden;
+}
+
+.bouton{
+position: absolute;
+width: 20px;
+cursor: pointer;
+top: 300px;
+}
+
+#g { 
+left: 0;
+opacity:0.4;
+transition: all 0.3s ease;
+}
+
+#d {
+right: 0;
+opacity: 0.4;
+transition: all 0.3s ease;
+}
+
+#g:hover{
+transform: scale(1.1);
+opacity: 1;
+transition: all 0.3s ease;
+}
+
+#d:hover{
+transform: scale(1.1);
+opacity: 1;
+transition: all 0.3s ease;
+}
+
+.photo{
+width: 420PX;
+height: 600px;
+margin: 0;
+display: inline-block;
+background-size: cover;
+
+}
+
+.popup_close{
+width: 30px;
+height: 30px;
+position: absolute;
+top: 2px;
+right: 10px;
+cursor: pointer;
+transition: 0.5s all ease;
+color: black;
+}
+
+.popup_close:hover{
+ transform: scale(1.2);
+}
+
+/* Partie gauche presentation */
+
+.presentation{
+margin: 0;
+padding: 0;
+height: 100%;
+font-family: Verdana;
+}
+
+.descriptionhaut{
+font-size: larger;
+display: flex;
+font-family:'Lucida';
+
+
+}
+
+.deshautcotegauche{
+height: 200px;
+}
+
+.deshautcotedroit{
+margin-top: 10px;
+line-height: 20px;
+}
+.descriptionbas{
+margin-left: 35px;
+font-size: larger;
+line-height: 20px;
+
+}
+.descriptionbas {
+    margin-left: 35px;
+    font-size: larger;
+    line-height: 20px;
+    width: 50%; 
+}
+
+.imgidentite{
+display: flex;
+justify-content: center;
+margin: 30px;
+margin-bottom: 10PX;
+
+} 
+
+footer{
+    border-top: solid white;
+    
+    
+    width: 100%;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    
+}
+
+.socialmedia {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.socialmedia img{
+    height: 10vh;
+}
+
+.popup_closeMobile{
+    display: none;
+}
+
+.boutonCarrouselMobile{
+    display: none;
+}
+
+.image_containerMobile{
+    display: none;
+}
+
+.popup_containerMobile{
+    display: none;
+}
+
+
+                        /* Format tablette */
+
+
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+    .imageprincipale{
+        width: auto;
+        height: 60vh;
+    }
+    
+}
+                        /* Format téléphone */
+
+
+@media screen and (max-width: 400px){
+
+                    /* Image entete */
+    .imageprincipale{
+        background-image: url(../images/imgtetemobil.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 250PX;
+        }
+
+                    /* Biography */
+
+    .divBio{
+            display: none;
+        }
+
+            /* Quadrillage Membres */
+
+    .principal{
+            margin: 0;
+            padding: 0;
+            width: auto;
+            height: auto;
+            flex-wrap: wrap
+        }
+
+    .Membres {
+            display: grid;
+            grid-template-columns: repeat(2, 4fr);
+        }
+        
+    .Membres div {
+            width: auto;
+            height: auto;
+        }
+
+                            /* Footer */
+    footer{
+            margin: 0;
+            height: 10vh;
+        }
+
+    .socialmedia div{
+            display: flex;
+            align-items: center;
+        }
+    .socialmedia {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+    .socialmedia img{
+            height: 5vh;
+        }
+         
+
+                            /* MODALE */
+
+    .popup_container {
+            position: absolute;
+            top: 50;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            }      
+
+    .popup_container.active{
+        display: flex;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 98%;
+        }
+
+    .popup {
+        display: grid;
+        grid-template-columns:none;
+        animation: none;
+        gap: 0;
+        padding: 0;
+        height: 90%;
+        width: 90%;
+        }
+
+    .image_container {
+        display: none;
+        }
+
+    .description {
+        width: 100%;
+        height: 100%;
+        }
+
+    .descriptionhaut{
+        height: 25vh;
+        width: 100%;
+        }
+    
+    .deshautcotedroit{
+        height: 25vh;
+        width: 50VW;
+        font-size: small;
+        }
+
+    .deshautcotegauche{
+        height: 25vh;
+        width: 30VW;
+       
+        }
+
+    .imgidentite{
+        height: 20vh;
+        width: 30vw;
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+        }
+
+    .descriptionbas{
+        margin: 0;
+        margin-left: 10px;
+        padding: 0;
+        height: 60vh;
+        width: 95%;
+        font-size: medium;
+        }
+
+
+
+    .popup_closeMobile {
+        height: 20PX;
+        width: 200PX;
+        display: block;
+        }   
+
+    .popup_closeMobile{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 35px;
+        right: 20px;
+        cursor: pointer;
+        transition: 0.5s all ease;
+        color: black;
+        }
+        
+        .popup_close:hover{
+         transform: scale(1.2);
+        }
+
+        .boutonCarrouselMobile{
+            height: 40px;
+            width: 100%;
+            margin: 0;
+            margin-left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            letter-spacing: 2PX;
+            font-family: fantasy;
+
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            
+        }
+            
+        }
+        /* .menuburger{
+            height: 25px;
+            width: 25px;
+        } */
+    
+
+
+
+                        /* Format ordinateur */
+
+@media screen and (min-width: 1001px){
+    img.menuburger{display: none;}
+
+}
